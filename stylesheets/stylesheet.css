@@ -32,6 +32,7 @@ nav {
       font-size: 1.3em;
       padding: 5px 10px;
       text-align: center;
+      text-shadow: 0 1px 0 black;
       text-transform: uppercase;
   }
 
@@ -162,11 +163,25 @@ nav {
   background-size: cover;
 }*/
 
+#tour {
+  display: block;
+  margin: 1rem auto;
+  max-width: 640px;
+}
+
+  .bit-description-links, .bit-rsvp {
+    display: none;
+  }
+
+#contact {
+  padding: 20px 0;
+}
+
 .main-content img {
   display: block;
   margin: auto;
   max-width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
@@ -209,18 +224,15 @@ nav {
     padding: 2rem 1rem;
     font-size: 1rem; } }
 
+/* Footer */
 .site-footer {
-  padding-top: 2rem;
   border-top: solid 1px #eff0f1; }
 
   .site-footer a {
     color: #000;
+    font-size: 12px;
   }
 
   .site-footer p {
     text-align: center;
   }
-
-@media screen and (min-width: 64em) {
-  .site-footer {
-    font-size: 12px; } }
