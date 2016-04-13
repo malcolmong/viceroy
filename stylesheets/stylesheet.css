@@ -53,7 +53,7 @@ nav {
   nav a {
       color: #ffffcc;
       display: inline;
-      font-size: 1.3em;
+      font-size: 1.4em;
       padding: 5px 10px;
       text-align: center;
       text-shadow: 0 1px 2px black;
@@ -66,7 +66,7 @@ nav {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   nav {
-    padding: 1rem 0 0; }
+    padding: 0; }
 }
 
 @media screen and (max-width: 42em) {
