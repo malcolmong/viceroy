@@ -187,11 +187,6 @@ nav {
   background-size: cover;
 }*/
 
-#album {
-  float: left;
-  width: 350px;
-}
-
 #tour, #contact {
   background: url("../img/next-escape-bg-bw-2.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -217,10 +212,14 @@ nav {
     color: #ffffcc;
   }
 
-.main-content img {
-  display: block;
+.main-content .album img.cover {
+  max-width: 27rem;
   margin: 0 auto 2rem;
-  max-width: 100%;
+}
+
+.main-content .album img {
+  display: block;
+  margin: 0 auto 10px;
 }
 
 /*.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
@@ -233,7 +232,8 @@ nav {
     clear: both;
     color: #567d4f;
     font-size: 5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
+    padding-top: 2rem;
     text-align: center;
     text-decoration: underline;
     text-shadow: 0 1px 1px black;
