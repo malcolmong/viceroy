@@ -2,6 +2,12 @@
   box-sizing: border-box; }
 
 body {
+  background: url("../img/beach-bg-2.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
   font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9,8 +15,27 @@ body {
   line-height: 1.5;
   color: #000; }
 
+  /*body:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url();
+    width: 1200px;
+    height: 800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }*/
+
 a {
-  color: #009900;
+  color: #f2a27f;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -109,7 +134,6 @@ nav {
   background-size: cover;
 }
 
-
 @media screen and (min-width: 64em) {
   .page-header {
     padding: 1rem 3rem; } }
@@ -163,37 +187,63 @@ nav {
   background-size: cover;
 }*/
 
-#tour {
+#album {
+  float: left;
+  width: 350px;
+}
+
+#tour, #contact {
+  background: url("../img/next-escape-bg-bw-2.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 1px solid black;
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
   max-width: 640px;
+  padding: 10px;
 }
 
   .bit-description-links, .bit-rsvp {
     display: none;
   }
 
-#contact {
-  padding: 20px 0;
-}
+  .bit-events {
+    font-size: 15px;
+  }
+
+  #contact p {
+    color: #ffffcc;
+  }
 
 .main-content img {
   display: block;
-  margin: auto;
+  margin: 0 auto 2rem;
   max-width: 100%;
-  padding-bottom: 2rem;
 }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+/*.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
+  }*/
+
+  .main-content h2 {
+    clear: both;
+    color: #567d4f;
+    font-size: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 1px 1px black;
+    text-transform: uppercase;
   }
 
 .main-content p {
   display: block;
   margin-bottom: 1em;
-  padding: 1em 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -217,16 +267,26 @@ nav {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
     padding: 2rem 6rem;
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .main-content h2 {
+    font-size: 4rem;
+  }
+}
 
 @media screen and (max-width: 42em) {
   .main-content {
     padding: 2rem 1rem;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .main-content h2 {
+    font-size: 3rem;
+  }
+}
 
 /* Footer */
 .site-footer {
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1;
+  margin-top: 10rem;
+}
 
   .site-footer a {
     color: #000;
